@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+.wid100,
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.position_rel {
+    position: relative;
+}
+
+hr {
+    border: solid 3px white;
+}
+
+.main {
+    background-color: black;
+}
+
+.main_img {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main_img img {
+    width: 50%;
+}
+
+.main_nav {
+    width: 70%;
+    padding-top: 92px;
+    list-style: none;
+}
+
+.main_nav li a {
+    padding: 20px 30px;
+}
+
+.main_nav li a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.nav_right {
+    width: 30%;
+}
+
+.nav_right span {
+    font-size: 21px;
+    color: white;
+}
+
+.skill_set {
+    height: 50px;
+    padding-top: 20px;
+}
+
+.skill_set span {
+    margin: 20px;
+}
+
+.personal_info {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    height: 100px;
+}
+
+.btn_wrap {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn_wrap button {
+    background-color: transparent;
+    border: 3px white solid;
+    padding: 5px 40px;
+}
+
+.btn_wrap button:nth-child(2) {
+    margin-left: 50px;
+}
+
+.btn_wrap button a {
+    font-size: 30px;
+    color: white;
+}
+
+.navbar_toogle {
+    display: none;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    font-size: 100px;
+}
+
+/* tablet */
+@media all and (max-width:1290px) {
+
+    hr {
+        border: solid 2px white;
+    }
+
+    .main_img {
+        margin-top: 80px;
+    }
+
+    .main_nav {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar_toogle {
+        display: block;
+    }
+
+    .length_hr {
+        margin-left: 30%;
+    }
+
+    .nav_right {
+        width: 70%;
+    }
+
+    .main_nav.active {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(000, 000, 000, 0.9);
+        padding: 0;
+        z-index: 1;
+    }
+
+    .main_nav.active li {
+        text-align: center;
+        padding: 80px;
+        margin: auto;
+    }
+
+    .btn_wrap {
+        bottom: 20px;
+    }
+
+    .btn_wrap button {
+        border: 2px white solid;
+        padding: 5px 40px;
+    }
+
+    .btn_wrap button:nth-child(2) {
+        margin-left: 50px;
+    }
+
+    .btn_wrap button a {
+        font-size: 15px;
+        color: white;
+    }
+
+    .navbar_toogle {
+        left: 10%;
+    }
+
+}
+
+/* mobile */
+@media all and (max-width:780px) {
+
+    hr {
+        border: solid 1px white;
+    }
+
+    .main_img {
+        margin-top: 30px;
+    }
+
+    .navbar_toogle {
+        left: 10%;
+        font-size: 60px;
+    }
+
+    .main_nav.active li {
+        text-align: center;
+        padding: 100px;
+        margin: auto;
+    }
+
+    .nav_right span {
+        font-size: 12px;
+    }
+
+    .skill_set {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .skill_set span {
+        margin: 5px
+    }
+
+    .personal_info {
+        padding-bottom: 5px;
+        height: auto;
+    }
+
+    .btn_wrap {
+        bottom: 30px;
+    }
+
+    .btn_wrap button {
+        border: 1px white solid;
+        padding: 3px 20px;
+    }
+
+    .btn_wrap button:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    .btn_wrap button a {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:550px) {
+
+    .navbar_toogle {
+        left: 8%;
+        font-size: 60px;
+    }
+
+    .main_nav li a {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .main_nav.active li {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .btn_wrap {
+        bottom: 20px;
+    }
+
+    .btn_wrap button {
+        border: 1px white solid;
+        padding: 1px 5px;
+    }
+
+    .btn_wrap button:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    .btn_wrap button a {
+        font-size: 10px;
+    }
+}
