@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("../img/coming_soon.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 30vh;
+            height: 100vh;
+        }
+
+        h1,
+        p {
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 120px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .p_02 {
+            position: absolute;
+            bottom: 5vh;
+            padding: 10px 20px;
+            color: #828282;
+            background-color: #dcdcdc21;
+            border-radius: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* tablet */
+        @media all and (max-width:1290px) {
+
+            h1 {
+                font-size: 90px;
+            }
+
+
+        }
+
+        @media all and (max-width:780px) {
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        @media all and (max-width:550px) {
+
+            p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>COMING SOON!</h1>
+        <P class="p_01">페이지 준비중입니다</P>
+        <p class="p_02">jyg12770@gmail.com</p>
+    </div>
+</body>
+
+</html>
